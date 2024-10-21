@@ -97,7 +97,12 @@ layout: default
 
     <h2 class="font-dynapuff">Meer info via onderstaand formulier</h2>
 
-    <form class="flex flex-col gap-4 font-dynapuff">
+    <form
+      action="https://formspree.io/f/mjkvkwrd"
+      method="post"
+      class="flex flex-col gap-4 font-dynapuff"
+    >
+      <input type="hidden" name="_language" value="nl" />
       <div>
         <label for="name">
           Naam van de jarige
@@ -246,6 +251,6 @@ layout: default
         />
       </div>
     </form>
-    <img src="{{ site.baseurl }}/assets/img/feest.jpg" alt="" class="mb-4/>
+    <img src="{{ site.baseurl }}/assets/img/feest.jpg" alt="" class="mb-4" />
   </div>
 </section>
