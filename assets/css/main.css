@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Tsjirp.be" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="tsjirp-website/assets/css/main.css" />
+  <link rel="stylesheet" href="/tsjirp-website/assets/css/main.css" />
   <title>Studio Tsjirp - Atelier voor creative vogels</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,13 +34,13 @@
     <div class="pt-2">
       <a href="https://michaelshmitty.github.io">
         <img
-          src="tsjirp-website/assets/img/logo.svg"
+          src="/tsjirp-website/assets/img/logo.svg"
           class="h-24 w-24 md:h-48 md:w-48"
         />
       </a>
     </div>
     <div class="hidden md:flex space-x-6">
-      <a href="tsjirp-website/contact" class="hover:underline">Contact</a>
+      <a href="/tsjirp-website/contact" class="hover:underline">Contact</a>
     </div>
     <button class="block hamburger md:hidden focus:outline-none" id="menu-btn">
       <span class="hamburger-top"></span>
@@ -54,7 +54,7 @@
       id="menu"
     >
       <a
-        href="tsjirp-website/contact"
+        href="/tsjirp-website/contact"
         class="bg-transparent font-semibold py-2 px-4 border rounded-full cursor-pointer text-slate-700 border-slate-500 text-center"
         >Contact</a
       >
@@ -70,7 +70,7 @@
   </p>
 </footer>
  <script
-  src="tsjirp-website/assets/js/main.js"
+  src="/tsjirp-website/assets/js/main.js"
   type="text/javascript"
 ></script>
 
