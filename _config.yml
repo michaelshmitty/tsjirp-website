@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Nodig vriendjes en vriendinnetjes uit en bepaal zelf je thema.
   Studio Tsjirp voorziet een aangepaste knutselactiviteit.
 url: "https://michaelshmitty.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "tsjirp-website" # the subpath of your site, e.g. /blog
+baseurl: "/tsjirp-website" # the subpath of your site, e.g. /blog
 github_username: michaelshmitty
 defaults:
   - scope:
