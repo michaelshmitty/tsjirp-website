@@ -165,6 +165,16 @@
     };
     version = "0.17.0";
   };
+  jekyll-postcss = {
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "06b28mcbibhg2jb1x0fk9hrqcwz5nk1v7vbhqw5fwddwhs2bj77l";
+      type = "gem";
+    };
+    version = "0.5.0";
+  };
   jekyll-sass-converter = {
     dependencies = ["sass-embedded"];
     groups = ["default"];

@@ -42,10 +42,19 @@
             ruby = pkgs.ruby_3_3;
             gemdir = ./.;
           };
+         node-modules = pkgs.mkYarnModules {
+            pname = "tsjirp-website-node-modules";
+            version = "1.0.0";
+            packageJSON = ./package.json;
+            yarnLock = ./yarn.lock;
+            yarnNix = ./yarn.nix;
+          };
         in [
           gems
           (pkgs.lowPrio gems.wrappedRuby)
+          pkgs.nodejs
           pkgs.rsync
+          pkgs.yarn
         ];
 
         env = [
@@ -71,6 +80,15 @@
             command = ''
               ${pkgs.ruby_3_3}/bin/bundle lock --update
               ${pkgs.bundix}/bin/bundix
+            '';
+          }
+          {
+            name = "update:yarn";
+            category = "Dependencies";
+            help = "Update `yarn.lock` and `yarn.nix`";
+            command = ''
+              ${pkgs.yarn}/bin/yarn install
+              ${pkgs.yarn2nix}/bin/yarn2nix > yarn.nix
             '';
           }
           {
