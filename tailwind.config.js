@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bollen: "url('/assets/img/bollen-achtergrond.svg')",
+        bollen: "url('/tsjirp-website/assets/img/bollen-achtergrond.svg')",
       },
       colors: {
         primary: "#504741",
