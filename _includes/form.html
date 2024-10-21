@@ -1,0 +1,160 @@
+<form
+  action="https://formspree.io/f/mjkvkwrd"
+  method="post"
+  class="flex flex-col gap-4 font-dynapuff"
+>
+  <input type="hidden" name="_language" value="nl" />
+  <div>
+    <label for="name">
+      Naam van de jarige
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="Naam van de jarige"
+        class="border border-primary rounded w-full h-10"
+        required
+    /></label>
+  </div>
+
+  <div>
+    <label for="dob">
+      Geboortedatum van de jarige
+      <br />
+      <input
+        type="text"
+        id="dob"
+        name="Geboortedatum van de jarige"
+        class="border border-primary rounded w-full h-10"
+        required
+      />
+    </label>
+  </div>
+
+  <div>
+    <label for="date">
+      Gewenste datum van het feestje
+      <input
+        type="text"
+        id="date"
+        name="Gewenste datum van het feestje"
+        class="border border-primary rounded w-full h-10"
+        required
+      />
+    </label>
+  </div>
+
+  <div>
+    <label for="email">
+      E-mailadres van mama of papa
+      <input
+        type="email"
+        id="email"
+        name="E-mailadres van mama of papa"
+        class="border border-primary rounded w-full h-10"
+        required
+      />
+    </label>
+  </div>
+
+  <div>
+    <label for="tel">
+      Telefoonnummer van mama of papa
+      <input
+        type="tel"
+        id="tel"
+        name="Telefoonnummer van mama of papa"
+        class="border border-primary rounded w-full h-10"
+        required
+      />
+    </label>
+  </div>
+
+  <div>
+    <p>Aantal kindjes, jarige inbegrepen</p>
+    <div class="flex gap-4">
+      <div>
+        <input
+          type="radio"
+          id="8"
+          name="Aantal kindjes, jarige inbegrepen"
+          value="8"
+          class="mr-2"
+          required
+        />
+        <label for="8">8 kindjes</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          id="10"
+          name="Aantal kindjes, jarige inbegrepen"
+          value="10"
+          class="mr-2"
+          required
+        />
+        <label for="10">10 kindjes</label>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p>Eetformule</p>
+
+    <div class="flex flex-col gap-2">
+      <div>
+        <input
+          type="radio"
+          id="none"
+          name="Eetformule"
+          value="Geen eten"
+          required
+        />
+        <label for="none">Zonder eten</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="cupcakes"
+          name="Eetformule"
+          value="Cupcakes versieren"
+          required
+        />
+        <label for="cupcakes">Cupcakes versieren</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="pancakes"
+          name="Eetformule"
+          value="Pannekoeken smullen"
+          required
+        />
+        <label for="pancakes">Pannekoeken smullen</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <label for="interests">
+      Thema's die de jarige leuk vindt, lievelingskleur- en of dier en eventueel
+      andere vragen of opmerkingen
+    </label>
+    <textarea
+      id="interests"
+      name="Thema's, interesses, andere vragen of opmerkingen"
+      class="border border-primary rounded w-full"
+      rows="10"
+      required
+    ></textarea>
+  </div>
+
+  <div>
+    <input
+      type="submit"
+      value="Versturen"
+      class="p-4 rounded w-full bg-light-brown text-white hover:bg-primary"
+    />
+  </div>
+</form>
